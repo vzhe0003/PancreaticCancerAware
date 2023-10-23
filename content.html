@@ -14,6 +14,7 @@
       font-size: 18px;
       margin: 20px;
       padding: 50px;
+      background-color: #f8f9fa;
     }
 
     h1 {
@@ -22,6 +23,10 @@
 
     .content {
       margin-top: 20px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .video-container {
@@ -29,45 +34,36 @@
     }
 
     .video-container iframe {
-      width: 60%;
-      height: 500px;
+      width: 80%;
+      height: 400px;
     }
 
     .png_container {
       text-align: center;
+      margin: 20px 0;
     }
 
     .png_container img {
-      margin: 10px; /* Optional: Add margin around images */
+      margin: 10px;
+      border-radius: 10px;
     }
 
     .contact-info {
       margin-top: 20px;
     }
-    body{
-      background-color: lightblue;
-    }
-    #figure3 img {
-      width: 50%; /* Set the width to your desired size */
-      height: 80%; /* Maintain the aspect ratio of the image */
-    }
-    #figure4 img {
-      width: 60%; /* Set the width to your desired size */
-      height: 80%; /* Maintain the aspect ratio of the image */
-    }
-    .separator-line {
-      border: 1px solid black; /* Set border properties */
-      margin: 10px 0; /* Adjust margin space above and below the line */
-    }
-    #figure1 img,
-    #figure2 img,
-    #figure3 img,
-    #figure4 img,
-    #figure5 img,
-    #figure6 img {
-      border-radius: 10px; /* You can adjust the value to control the roundness of the corners */
+
+    #navbar {
+      margin-bottom: 40px;
     }
 
+    .separator-line {
+      border: 1px solid black;
+      margin: 10px 0;
+    }
+
+    .div_container {
+      margin-top: 20px;
+    }
   </style>
 </head>
 
@@ -75,7 +71,7 @@
 
 <div id="navbar">
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="index.html"><bold>Home</bold></a>
+    <a class="navbar-brand" href="index.html"><b>Home</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -83,163 +79,144 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#Stages of Pancreatic Cancer">Stages</a>
+          <a class="nav-link" href="#b1">Overview</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Risk Factors">Risk Factors</a>
+          <a class="nav-link" href="#b2">Stages</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Symptoms">Symptoms</a>
+          <a class="nav-link" href="#b3">Risk Factors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Treatment Challenges">Treatment Challenges</a>
+          <a class="nav-link" href="#b4">Symptoms</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Take Action">Take Action</a>
+          <a class="nav-link" href="#b5">Treatment Challenges</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#b6">Take Action</a>
         </li>
       </ul>
     </div>
   </nav>
 </div>
 
-
-<h1><b>Pancreatic Cancer</b></h1>
+<div class="title" >
+  <h1><b>Pancreatic Cancer</b> </h1>
+</div>
 
 <div class="content">
 
-  <div class="info">
-    <div id="b1" class="div_container">
-      <h2 id="Overview">Overview</h2>
-      <p>Pancreatic cancer is a serious illness affecting the pancreas, a gland behind the stomach.
-        This condition occurs when some cells in the pancreas behave abnormally, leading to various health issues.
-        Consider the pancreas as a crucial organ that generates digestive enzymes and controls blood sugar.
-        In some cases, genetic mutations, like changes in the K-ras gene, can occur and act as the initial spark for cancer development.
-        These genetic changes disrupt the normal checks and balances that control cell growth,
-        allowing cells in the pancreas to divide and multiply uncontrollably. Over time,
-        more genetic mutations in normal pancreatic tissue lead to precancerous lesions called pancreatic intraepithelial neoplasia,
-        also known as PanIN. PanINs inch closer to becoming a full-blown cancer with each new genetic alteration (figure 1).</p>
-      <div id="figure1" class="png_container">
-        <h4>Figure 1: Stages of pancreatic cancer development</h4>
-        <img src="png/p1.png" alt="figure1">
-        <p>Stages of pancreatic cancer development, from normal pancreatic tissue to pancreatic ductal adenocarcinoma (PDAC), the most common type of pancreatic cancer.</p>
-      </div>
-    </div>
-    <br>
-    <br>
-
-    <hr class="separator-line">
-    <hr class="separator-line">
-
-    <br>
-    <br>
-    <div id="b2" class="div_container">
-      <h2 id="Stages of Pancreatic Cancer">Stages of Pancreatic Cancer</h2>
+  <div id="b1" class="div_container">
+    <h2>Overview</h2>
+    <p>Pancreatic cancer is a serious illness affecting the pancreas, a gland behind the stomach.
+      This condition occurs when some cells in the pancreas behave abnormally, leading to various health issues.
+      Consider the pancreas as a crucial organ that generates digestive enzymes and controls blood sugar.
+      In some cases, genetic mutations, like changes in the K-ras gene, can occur and act as the initial spark for cancer development.
+      These genetic changes disrupt the normal checks and balances that control cell growth,
+      allowing cells in the pancreas to divide and multiply uncontrollably. Over time,
+      more genetic mutations in normal pancreatic tissue lead to precancerous lesions called pancreatic intraepithelial neoplasia,
+      also known as PanIN. PanINs inch closer to becoming a full-blown cancer with each new genetic alteration (figure 1).</p>
+    <div id="figure1" class="png_container">
+      <h4>Figure 1: Stages of pancreatic cancer development</h4>
+      <img src="png/p1.png" alt="figure1" class="img-fluid">
       <p>Stages of pancreatic cancer development, from normal pancreatic tissue to pancreatic ductal adenocarcinoma (PDAC), the most common type of pancreatic cancer.</p>
-
-      <p>Pancreatic cancer is known for its aggressive nature and rapid spread. Cancerous cells are not localised and can quickly
-        spread to other body parts through the bloodstream or lymphatic system. This significantly complicates treatment if the cancer has metastasised
-        to other organs, such as the liver or lungs (Figure 2).</p>
-      <div id="figure2" class="png_container">
-        <h4>Figure 2: Metastasis of pancreatic cancer</h4>
-        <img src="png/p2.png" alt="figure2">
-        <p>Pancreatic cancer can spread to other parts of the body through the bloodstream or lymphatic system.
-          This is called metastasis. Metastatic pancreatic cancer is more difficult to treat than early-stage pancreatic cancer.</p>
-      </div>
-    </div>
-    <br>
-    <br>
-
-    <hr class="separator-line">
-    <hr class="separator-line">
-    <br>
-    <br>
-    <div id="b3" class="div_container">
-      <h2 id="Risk Factors">Risk Factors</h2>
-      <p>Although the causes of pancreatic cancer are not fully understood, it is believed to result from a combination of factors.
-        Some of the risk factors that result in pancreatic cancer are tobacco, excess alcohol consumption, obesity, a diet that is high in fat, polyunsaturated fats,
-        processed meats, and genetic factors (Figure 3).
-        Pancreatic cancer can be diagnosed through pancreas computed tomography (CT) angiography with the chest and pelvis used to assess vascular anatomy. </p>
-      <div id="figure3" class="png_container">
-        <h4>Figure 3: Risk factors for pancreatic cancer</h4>
-        <img src="png/p3.png" alt="figure3">
-        <p>Pancreatic cancer is caused by a combination of factors, including tobacco, excess alcohol consumption,
-          obesity, a diet that is high in fat, polyunsaturated fats, processed meats, and genetic factors.</p>
-      </div>
-    </div>
-    <br>
-    <br>
-    <hr class="separator-line">
-    <hr class="separator-line">
-    <br>
-    <div id="b4" class="div_container">
-      <h2 id="Symptoms">Symptoms</h2>
-      <p>Pancreatic cancer sometimes does not show symptoms in the early stages and would only show symptoms in the advanced stage.
-        Patients who show symptoms include decreased appetite, indigestion and change in bowel movement. Most of the tumours found in the pancreas are on the head,
-        which leads to biliary obstruction that causes dark urine, jaundice, decreased appetite, tiredness, loss of weight, and exocrine pancreatic insufficiency (Figure 4).
-        Suppose the individual has tumours on the body and tail; in that case, this can result in non-specific pain in the abdomen region.</p>
-      <div id="figure4" class="png_container">
-        <h4>Figure 4: Symptoms of pancreatic cancer</h4>
-        <img src="png/p4.png" alt="figure4">
-        <p>Pancreatic cancer often does not cause symptoms in the early stages. When symptoms do occur, they can include decreased appetite,
-          indigestion, change in bowel movement, dark urine, jaundice, decreased appetite, tiredness, loss of weight, and exocrine pancreatic insufficiency.</p>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-
-    <hr class="separator-line">
-    <hr class="separator-line">
-    <div id="b5" class="div_container">
-      <h2 id="Treatment Challenges">Treatment Challenges</h2>
-      <p>Pancreatic cancer treatment poses significant challenges. The tumour creates a unique environment around itself.
-        It's like cancer forms its ecosystem. This ecosystem includes a thick, fibrous tissue known as the stroma, immune cells, and other components.
-        This stroma acts as both a shield and a barrier. On one hand, it shields the tumour from the body's immune system, making it difficult for the immune
-        cells to recognise and attack the cancer (figure 5).
-        On the other hand, it acts as a barrier, making it challenging for medicines to reach the tumour and fight against it. </p>
-      <div id="figure5" class="png_container">
-        <h4>Figure 5: The unique microenvironment of pancreatic cancer</h4>
-        <img src="png/p5.png" alt="figure3">
-        <p>This microenvironment includes a thick, fibrous tissue known as the stroma, immune cells, and other components.
-          The stroma acts as both a shield and a barrier, protecting the tumor from the body's immune system and making it difficult for drugs to reach the tumor.</p>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <hr class="separator-line">
-    <hr class="separator-line">
-    <div id="b6" class="div_container">
-      <h2 id="Take Action">Take Action</h2>
-      <p>Pancreatic cancer is a life-threatening disease that requires our attention. By gaining knowledge about the symptoms,
-        risk factors, and available treatments, we can take proactive measures to safeguard our well-being and that of our family members.
-        It is essential to stay informed and take action, as early detection is critical to improving the chances of successful treatment.</p>
-    </div>
-
-    <div id = "b7" class="div_container">
-      <p>The video provides a brief overview of pancreatic cancer, including its symptoms, risk factors, and treatments.
-        Pancreatic cancer is a serious disease, but early detection and treatment can improve the chances of survival.</p>
-
-    </div>
-    <div class="video-container">
-      <iframe width="400" height="450" src="https://www.youtube.com/embed/7ei5ooATRh8" frameborder="0"
-              allowfullscreen></iframe>
     </div>
   </div>
 
-  <div class="contact-info">
+  <hr class="separator-line">
+
+  <div id="b2" class="div_container">
+    <h2>Stages of Pancreatic Cancer</h2>
+    <p>Stages of pancreatic cancer development, from normal pancreatic tissue to pancreatic ductal adenocarcinoma (PDAC), the most common type of pancreatic cancer.</p>
+    <p>Pancreatic cancer is known for its aggressive nature and rapid spread. Cancerous cells are not localised and can quickly
+      spread to other body parts through the bloodstream or lymphatic system. This significantly complicates treatment if the cancer has metastasised
+      to other organs, such as the liver or lungs (Figure 2).</p>
+    <div id="figure2" class="png_container">
+      <h4>Figure 2: Metastasis of pancreatic cancer</h4>
+      <img src="png/p2.png" alt="figure2" class="img-fluid">
+      <p>Pancreatic cancer can spread to other parts of the body through the bloodstream or lymphatic system.
+        This is called metastasis. Metastatic pancreatic cancer is more difficult to treat than early-stage pancreatic cancer.</p>
+    </div>
+  </div>
+
+  <hr class="separator-line">
+
+  <div id="b3" class="div_container">
+    <h2>Risk Factors</h2>
+    <p>Although the causes of pancreatic cancer are not fully understood, it is believed to result from a combination of factors.
+      Some of the risk factors that result in pancreatic cancer are tobacco, excess alcohol consumption, obesity, a diet that is high in fat, polyunsaturated fats,
+      processed meats, and genetic factors (Figure 3).
+      Pancreatic cancer can be diagnosed through pancreas computed tomography (CT) angiography with the chest and pelvis used to assess vascular anatomy. </p>
+    <div id="figure3" class="png_container">
+      <h4>Figure 3: Risk factors for pancreatic cancer</h4>
+      <img src="png/p3.png" alt="figure3" class="img-fluid">
+      <p>Pancreatic cancer is caused by a combination of factors, including tobacco, excess alcohol consumption,
+        obesity, a diet that is high in fat, polyunsaturated fats, processed meats, and genetic factors.</p>
+    </div>
+  </div>
+
+  <hr class="separator-line">
+
+  <div id="b4" class="div_container">
+    <h2>Symptoms</h2>
+    <p>Pancreatic cancer sometimes does not show symptoms in the early stages and would only show symptoms in the advanced stage.
+      Patients who show symptoms include decreased appetite, indigestion and change in bowel movement. Most of the tumours found in the pancreas are on the head,
+      which leads to biliary obstruction that causes dark urine, jaundice, decreased appetite, tiredness, loss of weight, and exocrine pancreatic insufficiency (Figure 4).
+      Suppose the individual has tumours on the body and tail; in that case, this can result in non-specific pain in the abdomen region.</p>
+    <div id="figure4" class="png_container">
+      <h4>Figure 4: Symptoms of pancreatic cancer</h4>
+      <img src="png/p4.png" alt="figure4" class="img-fluid">
+      <p>Pancreatic cancer often does not cause symptoms in the early stages. When symptoms do occur, they can include decreased appetite,
+        indigestion, change in bowel movement, dark urine, jaundice, decreased appetite, tiredness, loss of weight, and exocrine pancreatic insufficiency.</p>
+    </div>
+  </div>
+
+  <hr class="separator-line">
+
+  <div id="b5" class="div_container">
+    <h2>Treatment Challenges</h2>
+    <p>Pancreatic cancer treatment poses significant challenges. The tumour creates a unique environment around itself.
+      It's like cancer forms its ecosystem. This ecosystem includes a thick, fibrous tissue known as the stroma, immune cells, and other components.
+      This stroma acts as both a shield and a barrier. On one hand, it shields the tumour from the body's immune system, making it difficult for the immune
+      cells to recognise and attack the cancer (figure 5).
+      On the other hand, it acts as a barrier, making it challenging for medicines to reach the tumour and fight against it. </p>
+    <div id="figure5" class="png_container">
+      <h4>Figure 5: The unique microenvironment of pancreatic cancer</h4>
+      <img src="png/p5.png" alt="figure3" class="img-fluid">
+      <p>This microenvironment includes a thick, fibrous tissue known as the stroma, immune cells, and other components.
+        The stroma acts as both a shield and a barrier, protecting the tumor from the body's immune system and making it difficult for drugs to reach the tumor.</p>
+    </div>
+  </div>
+
+  <hr class="separator-line">
+
+  <div id="b6" class="div_container">
+    <h2>Take Action</h2>
+    <p>Pancreatic cancer is a life-threatening disease that requires our attention. By gaining knowledge about the symptoms,
+      risk factors, and available treatments, we can take proactive measures to safeguard our well-being and that of our family members.
+      It is essential to stay informed and take action, as early detection is critical to improving the chances of successful treatment.</p>
+  </div>
+
+  <div id="b7" class="div_container">
     <h2>Further Support</h2>
     <p>For more information about pancreatic cancer, you can call 131120 (Cancer Council, n.d.).
       Specially trained staff are available to provide information about pancreatic cancer and its treatment.
       Alternatively, you can also talk to your local general practitioner to discuss your concerns and if you are experiencing any signs or symptoms of pancreatic cancer.</p>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7ei5ooATRh8" frameborder="0"
+            allowfullscreen></iframe>
+  </div>
 
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
